@@ -67,7 +67,7 @@ body {
 .leftcontainer {
   background-color: rgb(27, 27, 99); 
   width: 45%;
-  height: 500px;
+  height: 503px;
   display: inline-block;
   
 }
@@ -132,7 +132,7 @@ body {
   width: 100%;
   display: block;
   margin: 0 auto;
-  height: 85%;
+  height: 80%;
   z-index: 2;
 }
 
@@ -145,6 +145,30 @@ body {
   position: relative;
   overflow: hidden;
 }
+
+.slidesandtext {
+  width: 100%;
+  height: 100px;
+  display: flex;
+
+}
+
+.slidesandtext p {
+  padding-right: 10px;
+  color: white;
+  font-size: 1vw;
+  padding-left: 10px;
+}
+
+
+.newscontainer a {
+  padding-left: 0px;
+  padding-right:10px ;
+  color: white;
+  font-size: 1vw;
+  text-decoration: underline;
+}
+
 
 .slide {
   width: 100%;
@@ -193,5 +217,52 @@ body {
 .projectcontainer{
   background-color: rgb(4, 0, 22);
   height: 500px;
-  width: 90%
+  width: 90%;
+  display: flex;
+  z-index: -2;
+}
+
+.theproject{
+  height: 500px;
+  width:75%;
+  z-index: 1;
+  display: block;
+  text-align: center;
+}
+
+.theproject h1{
+  color: white;
+  padding-top: 40px;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+}
+
+.theproject img {
+  padding-top: 60px;
+  height: 500px;
+  width:75%;
+  height: 60%;
+}
+
+.abouttheproject{
+  background-color:rgb(0, 0, 0);
+  height: 500px;
+  width:25%;
+  z-index: 1;
+  display: block;
+  text-align: center;
+}
+
+.abouttheproject h1 {
+  padding-top: 100px;
+  color: white;
+  margin: 0 auto;
+}
+
+.abouttheproject a {
+  padding-top: 60px;
+  color: white;
+  margin: 0 auto;
+  text-decoration: underline;
 }
