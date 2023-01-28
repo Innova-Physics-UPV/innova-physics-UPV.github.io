@@ -1,9 +1,13 @@
 nav {
-  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 1); 
+  width:99%;
+  top: 0;
+  border-radius: 0px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
+  position: fixed;
+  z-index: 50;
 }
   
 nav ul {
@@ -29,7 +33,22 @@ body {
   background: white;
 }
 
-  
+body h1 {
+ font-family: Arial;
+ color: white;
+}
+
+body p {
+  font-family: Arial;
+  color: white;
+ }
+
+body a {
+  font-family: Arial;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 .titlecontainer {
   background-color: rgba(0,0,0, 0); 
@@ -62,34 +81,29 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0px; 
   width: 100%;
-  height: 509px;
-  z-index: -2;
+  height: 500px;
+
   display: flex;
 }
 
-.marginleft, .marginright {
-  background-color: rgb(0,0,0,0); 
-  width: 3%;
-  height: 500px;
-  z-index: 1;
-}
 
 .leftcontainer {
-  background-color: rgb(27, 27, 99); 
+  background-color: rgb(12, 1, 53); 
   width: 47%;
-  height: 503px;
-  display: inline-block;
-  
+  height: 500px;
+  display: block;
 }
 
 .desccontainer {
   background-color: rgb(27, 27, 99); 
   width: 100%;
-  height: 52%;
+  height: 60%;
   z-index: 1;
+  overflow: hidden;
 }
 
 .desccontainer h1 {
+  font-size: 27px;
   padding-left: 40px;
   color: white;
 }
@@ -97,7 +111,7 @@ body {
 .desccontainer p {
   padding-left: 40px;
   color: white;
-  font-size: 1vw;
+  font-size: 15px;
   padding-right: 40px;
   text-align: justify;
 }
@@ -105,33 +119,21 @@ body {
 .newscontainer {
   background-color: rgb(12, 1, 53); 
   width: 100%;
-  height: 42%;
-  z-index: 1;
+  height: 40%;
+  z-index: 30;
   display: block;
-  padding-left: 40px;
-}
-
-
-.newscontainer a {
-  position: absolute;
-  padding-left:20px ;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  color: white;
-  font-size: 1vw;
-  text-decoration: underline;
 }
 
 .newscontainer h1 {
-  padding-top: 10px;
+  padding-top: 0px;
+  padding-left:40px ;
   color: white;
 }
-
 
 .rightcontainer {
   background-color: rgb(0, 0, 0); 
   width: 47%;
-  height: 509px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,47 +148,47 @@ body {
   z-index: 2;
 }
 
-
 .slidecontainer {
-  width: 100%;
-  max-width: 160px;
+  width: 25%;
   height: 100px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
 
-.slidesandtext {
-  width: 100%;
+.newstext {
+  background-color: rgba(0, 0, 0, 0);
+  width: 65%;
   height: 100px;
+  display: block;
+  overflow: hidden;
+}
+
+.slidesandtext {
+  height: 100px;
+  width: 100%;
   display: flex;
-
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.slidesandtext p {
-  padding-right: 10px;
-  color: white;
-  font-size: 1vw;
+.newstext p{
   padding-left: 10px;
+  margin-right: 20px;
+  font-size: 15px;
+  text-align: justify;
 }
 
-
-.newscontainer a {
-  padding-left: 0px;
-  padding-right:10px ;
-  color: white;
-  font-size: 1vw;
-  text-decoration: underline;
+.newstext a{
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 15px;
 }
-
 
 .slide {
   width: 100%;
-  max-width: 160px;
   height: 100px;
   position: absolute;
   transition: all 0.5s;
-  
 }
 
 .slide img {
@@ -202,7 +204,7 @@ body {
   width: 20px;
   height: 20px;
   padding: 0px;
-  border: none;
+  border:none;
   border-radius: 50%;
   z-index: 10;
   cursor: pointer;
@@ -229,7 +231,6 @@ body {
   height: 500px;
   width: 94%;
   display: flex;
-  z-index: -2;
 }
 
 .theproject{
@@ -259,7 +260,6 @@ body {
   background-color:rgb(0, 0, 0);
   height: 500px;
   width:25%;
-  z-index: 1;
   display: block;
   text-align: center;
 }
@@ -271,8 +271,32 @@ body {
 }
 
 .abouttheproject a {
-  padding-top: 60px;
   color: white;
   margin: 0 auto;
   text-decoration: underline;
+}
+
+.hspace{
+  height:100%;
+}
+
+.vspace{
+  width:100%;
+}
+
+.bottomcontainer {
+  width:94%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position:relative;
+  bottom:0;
+  text-align: center;
+}
+
+.bottomcontainer h1{
+  font-size: 18px;
+}
+
+.bottomcontainer p{
+  font-size: 15px;
 }

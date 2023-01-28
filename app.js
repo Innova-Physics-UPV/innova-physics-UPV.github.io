@@ -10,7 +10,7 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": ["#12DEFA", "#FA126D", "#12FA5C"]
+        "value": ["#B158FF", "#60C6FF", "#0176FE"]
         
       },
       "shape": {
@@ -52,12 +52,12 @@ particlesJS('particles-js',
         "enable": true,
         "distance": 80,
         "color": "#000000",
-        "opacity": 0.4,
+        "opacity": 0.2,
         "width": 2
       },
       "move": {
         "enable": true,
-        "speed": 5,
+        "speed": 3,
         "direction": "none",
         "random": false,
         "straight": false,

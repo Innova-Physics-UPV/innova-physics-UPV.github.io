@@ -8,11 +8,10 @@
       <script src = index.js></script>
       <nav>
          <ul>
-            <li><a href="index.html" style="font-family: Arial; font-size: 14px;">Home</a></li>
-            <li><a href="sections/team/team.html" style="font-family: Arial; font-size: 14px;">Our team</a></li>
-            <li><a href="https://github.com/Innova-Physics-UPV" style="font-family: Arial; font-size: 14px;">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/" style="font-family: Arial; font-size: 14px;">LinkedIn</a></li>
-            <li><a href="https://www.upv.es/es" style="font-family: Arial; font-size: 14px;">UPV main page</a></li>
+            <li><a href="index.html" style="text-decoration: none; font-size: 14px;">Home</a></li>
+            <li><a href="sections/team/team.html" style="text-decoration: none; font-size: 14px;">Our team</a></li>
+            <li><a href="https://www.linkedin.com/" style="text-decoration: none; font-size: 14px;">LinkedIn</a></li>
+            <li><a href="https://www.upv.es/es" style="text-decoration: none; font-size: 14px;">UPV main page</a></li>
          </ul>
       </nav>
       <header>
@@ -30,66 +29,78 @@
          <script src="app.js"></script>
 
          <div class="maincontainer">
-            <div class="marginleft"></div>
+            <div class="hspace" style="width:3%"></div>
             <div class="leftcontainer">
                <div class="desccontainer">
-                  <h1 style="font-family: Arial; font-size: 27px;">Who are we?</h1>
-                  <p style="font-family: Arial; ">We are a group of students working under the 'generación espontanea' program, supported and financed
-                     by the Polythecnic University of Valencia. Our mission is to apply fundamental and applIed physics to medicine breakthroughs.<br>
-                  <p style="font-family: Arial; ">Conformed by a multidisciplinar group and tutored by professors from various departments, we are investigating
+                  <h1>Who are we?</h1>
+                  <p>We are a group of students working under the 'generación espontanea' program, supported and financed
+                     by the Polythecnic University of Valencia. Our mission is to apply fundamental and applied physics to diverse engeneering fields.<br>
+                  <p>Conformed by a multidisciplinar group and tutored by professors from various departments, we are investigating
                      linear particle acceleration and a syncrotron design and building, in order to produce radiopharmaceuticals applyed to positron emission
-                     tomography. Our team is divided in engeneering, programming, investigation, electronics, HR and marketing/advertising subgroups.<br>
-                     <p style="font-family: Arial; ">We believe in excellence and dedication, pushing the boundaries towards an accesible, 
-                        yet cutting-edge medicine for people around the globe.
+                     tomography. Our team is divided in mechanical structures, software, investigation, electronics, HR and marketing/advertising subgroups.<br>
+                  <p>We believe in excellence and dedication, pushing the boundaries towards an accesible, 
+                     yet cutting-edge technology for people around the globe.</p>
                </div>
                <div class="newscontainer">
                   <h1 style="font-family: Arial; font-size: 27px;">News</h1>
                   <div class="slidesandtext">
-
-                  
-                  <div class="slidecontainer">
-                     <div class="slide">
-                        <img src="images/ansys.webp" alt="Imagen 1">
-                     </div>   
-                     <div class="slide">
-                        <img src="images/PET-image.jpg" alt="Imagen 2">
+                  <div class="hspace" style="width: 5%"></div>
+                     <div class="slidecontainer">
+                        <div class="slide">
+                           <img src="images/ansys.webp" alt="Imagen 1">
+                        </div>   
+                        <div class="slide">
+                           <img src="images/PET-image.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="slide">
+                           <img src="images/demo1.jpg" alt="Imagen 3">
+                        </div>
+                        <button class="btn btn-next" id="btnnext" onClick=nextsl()>></button>
+                        <button class="btn btn-prev" id="btnprev" onClick=prevsl()><</button>
                      </div>
-                     <div class="slide">
-                        <img src="images/demo1.jpg" alt="Imagen 3">
+                     <div class="newstext">
+                        <p>We are looking for students! You can access all the descriptions, requisites and forms on this link.</p>
+                        <a href="sections/hiring/hiring.html">View opportunities</a>
                      </div>
-                     <button class="btn btn-next" id="btnnext" onClick=nextsl()>></button>
-                     <button class="btn btn-prev" id="btnprev" onClick=prevsl()><</button>
-                     
-                  </div>
-                     <p><span style="font-family: Arial;">We are looking for students! You can access all the descriptions, requisites and forms on this link.</h1><br>
-                     <a style="font-family: Arial;">View opportunities</a>
+                     <div class="hspace" style="width: 5%;"></div>
                   </div>
                </div>
-                  
             </div>
+
             <div class="rightcontainer">
                <img alt="main image" src="images/mainphoto.jpg">
             </div>
-            <div class="marginright"></div>    
+            <div class="hspace" style="width:3%"></div>    
          </div>
       <div class="maincontainer">
-         <div class="marginleft"></div>
+         <div class="hspace" style="width:3%"></div>
          <div class="projectcontainer">
             <div class="theproject">
-               <h1 style="font-family: Arial; font-size: 40px;"> Our creation: Paellatron</h1>
+               <h1 style="font-size: 40px;"> Our prototype</h1>
                <img src="images/project.png">
          
             </div>
             <div class="abouttheproject">
-               <h1 style="font-family: Arial; font-size: 27px;">Learn more</h1> <br><br><br><br><br><br>
-               <a style="font-family: Arial;"> Documentation</a><br><br><br><br>
-               <a style="font-family: Arial;"> Open-source Software</a>
+               <h1 style="font-size: 27px;">Learn more</h1> <br><br><br><br><br><br>
+               <a> Documentation</a>
+               <br><br><br><br>
+               <a href="https://github.com/Innova-Physics-UPV"> Open-source Software</a>
          
             </div>
          </div>
-         <div class="marginright"></div>
+         <div class="hspace" style="width:3%"></div>
       </div>   
+      <div class="maincontainer" style="height: 120px;">
+         <div class="hspace" style="width:3%"></div>
+         <div class="bottomcontainer">
+            <h1>Contact us:</h1>
+            <p>@innovaphysicsupv</p>
+            <p>innovaphysicsupv@gmail.com</p>
+         </div>
+         <div class="hspace" style="width:3%"></div>
       </div>
+
+      
       </main>
    </body>
 </html>

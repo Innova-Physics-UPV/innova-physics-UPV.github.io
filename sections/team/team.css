@@ -1,11 +1,15 @@
 nav {
-    background-color: rgb(0, 0, 0); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
+  background-color: rgba(0, 0, 0, 1); 
+  width:99%;
+  top: 0;
+  border-radius: 0px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
   }
-    
+  
   nav ul {
     list-style: none;
     display: flex;
@@ -27,9 +31,25 @@ nav {
   
   body {
     background: white;
+    align-items: center;
   }
   
-    
+  body h1 {
+    font-family: Arial;
+    color: white;
+   }
+   
+   body p {
+     font-family: Arial;
+     color: white;
+    }
+   
+   body a {
+     font-family: Arial;
+     color: white;
+     cursor: pointer;
+     text-decoration: underline;
+   }
   
   .titlecontainer {
     background-color: rgba(0,0,0, 0); 
@@ -119,4 +139,20 @@ nav {
   }
   
   
-  
+  .hiringcontainer{
+    height: 100px;
+    width:100%;
+    display: flex;
+  }
+
+  .hspace{
+    height:100%;
+  }
+
+  .hiring {
+    height:100%;
+    width:25%;
+    background: linear-gradient(#2f016c, #9198e5);
+    text-align: center;
+    border-radius: 10px;
+  }
