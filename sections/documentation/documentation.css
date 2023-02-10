@@ -115,6 +115,7 @@ body a {
     height: 50px;
     width:100%;
     background-color: rgb(8, 4, 30);
+    cursor: pointer;
 }
 
 .content {
@@ -126,14 +127,14 @@ body a {
 }
 
 .content h1 {
-    padding-left:10px;
-    padding-top:10px;
+    padding-left:20px;
+    padding-top:20px;
     display: block;
 }
 
 .content p {
-    padding-left:10px;
-    padding-top:10px;
+    padding-left:20px;
+    padding-top:20px;
     display: block;
 }
 .content a {

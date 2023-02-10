@@ -1,51 +1,38 @@
 var softwaretext;
 var electronicstext;
 var structurestext;
-var mechanicstext;
-var phyhsicstext;
+var materialstext;
+var physicstext;
 var chemistrytext;
 var healthtext;
 var initialized = false;
 softwaretext=[
-    "20/12/2022 latex example 1",
-    "15/01/2023 hello mama",
 ]
 
 electronicstext=[
-    "20/12/2022 latex example 1",
-    "15/01/2023 hello mama",
 ]
 
 structurestext=[
-    "20/12/2022 latex example 1",
-    "15/01/2023 hello mama",
 ]
 
-mechanicstext=[
-    "20/12/2022 latex example 1",
-    "15/01/2023 hello mama",
+materialstext=[
 ]
 
-phyhsicstext=[
-    "20/12/2022 latex example 1",
-    "15/01/2023 hello mama",
+physicstext=[
 ]
 
 chemistrytext=[
-    "20/12/2022 latex example 1",
-    "15/01/2023 hello mama",
+    "10/02/2023 latex example 1",
 ]
 
 healthtext=[
-    "20/12/2022 latex example 1",
-    "15/01/2023 hello mama",
 ]
 
 function retrieveSoftware(){
     const title = document.getElementById("title");
     title.textContent = 'Software docs';
     const desc = document.getElementById("desc");
-    desc.textContent = '';
+    desc.textContent = 'No documents yet';
 
     if(initialized){
         location.reload();
@@ -65,7 +52,7 @@ function retrieveElectronics(){
     const title = document.getElementById("title");
     title.textContent = 'Electronics docs';
     const desc = document.getElementById("desc");
-    desc.textContent = '';
+    desc.textContent = 'No documents yet';
     
     if(initialized){
         location.reload();
@@ -78,5 +65,105 @@ function retrieveElectronics(){
             document.getElementById("content").appendChild(publication);
             initialized = true;
         }
+    }
+}
+
+function retrieveStructures(){
+    const title = document.getElementById("title");
+    title.textContent = 'Structures docs';
+    const desc = document.getElementById("desc");
+    desc.textContent = 'No documents yet';
+
+    if(initialized){
+        location.reload();
+    } else{
+        for (var i=0; i<structurestext.length; i++ ){
+            const publication = document.createElement("a");
+            const textNode = document.createTextNode(`${structurestext[i]}`);
+            publication.href = `../../documentation/structures${i}.pdf` 
+            publication.appendChild(textNode);
+            document.getElementById("content").appendChild(publication);
+        }
+        initialized = true;
+    }
+}
+
+function retrieveMaterials(){
+    const title = document.getElementById("title");
+    title.textContent = 'Materials docs';
+    const desc = document.getElementById("desc");
+    desc.textContent = 'No documents yet';
+
+    if(initialized){
+        location.reload();
+    } else{
+        for (var i=0; i<materialstext.length; i++ ){
+            const publication = document.createElement("a");
+            const textNode = document.createTextNode(`${materialstext[i]}`);
+            publication.href = `../../documentation/materials${i}.pdf` 
+            publication.appendChild(textNode);
+            document.getElementById("content").appendChild(publication);
+        }
+        initialized = true;
+    }
+}
+
+function retrievePhysics(){
+    const title = document.getElementById("title");
+    title.textContent = 'Physics docs';
+    const desc = document.getElementById("desc");
+    desc.textContent = 'No documents yet';
+
+    if(initialized){
+        location.reload();
+    } else{
+        for (var i=0; i<physicstext.length; i++ ){
+            const publication = document.createElement("a");
+            const textNode = document.createTextNode(`${physicstext[i]}`);
+            publication.href = `../../documentation/physics${i}.pdf` 
+            publication.appendChild(textNode);
+            document.getElementById("content").appendChild(publication);
+        }
+        initialized = true;
+    }
+}
+
+function retrieveChemistry(){
+    const title = document.getElementById("title");
+    title.textContent = 'Chemistry docs';
+    const desc = document.getElementById("desc");
+    desc.textContent = '';
+
+    if(initialized){
+        location.reload();
+    } else{
+        for (var i=0; i<chemistrytext.length; i++ ){
+            const publication = document.createElement("a");
+            const textNode = document.createTextNode(`${chemistrytext[i]}`);
+            publication.href = `../../documentation/chemistry${i}.pdf` 
+            publication.appendChild(textNode);
+            document.getElementById("content").appendChild(publication);
+        }
+        initialized = true;
+    }
+}
+
+function retrieveHealth(){
+    const title = document.getElementById("title");
+    title.textContent = 'Health docs';
+    const desc = document.getElementById("desc");
+    desc.textContent = 'No documents yet';
+
+    if(initialized){
+        location.reload();
+    } else{
+        for (var i=0; i<healthtext.length; i++ ){
+            const publication = document.createElement("a");
+            const textNode = document.createTextNode(`${healthtext[i]}`);
+            publication.href = `../../documentation/health${i}.pdf` 
+            publication.appendChild(textNode);
+            document.getElementById("content").appendChild(publication);
+        }
+        initialized = true;
     }
 }
