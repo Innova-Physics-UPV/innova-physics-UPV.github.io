@@ -30,7 +30,7 @@ nav {
   }
   
   body {
-    background: white;
+    background: rgb(0, 0, 0);
     align-items: center;
   }
   
@@ -51,20 +51,23 @@ nav {
      text-decoration: underline;
    }
   
-  .titlecontainer {
+   .titlecontainer {
     background-color: rgba(0,0,0, 0); 
     text-align: center;
     width: 100%;
-    height: 110px;
-    display: block;
+    height: 100px;
+    position: relative;
   }
     
   .titlecontainer h1 {
-    padding-top: 50px;
-    color: rgb(0, 0, 0);
-    margin:0 auto;
+    padding-left: 27%;
+    padding-right: 8%;
+    padding-top: 80px;
+    color: rgb(255, 255, 255);
+    margin: auto;
     font-size: 5vw;
     font-family: Geneva;
+    position: absolute;
   }
   
   .maincontainer {
@@ -83,10 +86,30 @@ nav {
     z-index: 1;
   }
   
+  
+  #particles-js{
+    width: 100%;
+    height: 250px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+  }
+
+  .colortransition1{
+    background:linear-gradient(to bottom, rgb(0,0,0), rgb(4, 0, 26));
+    height:200px;
+    width:100%;
+  }
+
+  .colortransition2{
+    background:linear-gradient(to bottom, rgb(4, 0, 26), rgb(0,0,0));
+    height:200px;
+    width:100%;
+  }
+
   .teamcontainer {
-    background-color: rgb(2, 0, 24);
+    background-color: rgb(4, 0, 26);
     border-radius: 0px; 
-    width: 94%;
+    width: 100%;
     height: 100%;
     display: block;
     text-align: center;

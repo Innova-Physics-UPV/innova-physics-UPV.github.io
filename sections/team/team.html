@@ -5,7 +5,7 @@
       <link rel="stylesheet" type="text/css" href="team.css">
    </head>
    <body>
-      <script src = team.js></script>
+    <script src = team.js></script>
       <nav>
          <ul>
             <li><a href="../../index.html" style="text-decoration: none; font-size: 14px;">Home</a></li>
@@ -16,27 +16,20 @@
          </ul>
       </nav>
       <header>
-      <div class="titlecontainer">
-        <br><br>
-            <h1>OUR TEAM</h1>
-        </div>
-         
-         <br><br><br><br><br><br>
+        <br>
+        <div class="titlecontainer"><br>
+            <div id="particles-js"></div>
+            
+            <h1>NUESTRO EQUIPO</h1>
+         </div>
+         <br><br><br><br><br><br><br>
       </header>
       <main>
-
-        <div class="hiringcontainer">
-            <div class="hspace" style="width: 37.5%"></div>
-            <div class="hiring">
-                <p style="font-size: 18px;">We are hiring!</p>
-                <a href="../hiring/hiring.html">Check out our vacants</a>
-            </div>
-            <div class="hspace" style="width: 37.5%"></div>
-        </div>
-        <br><br>
-
+        <script src="particles.js"></script>
+         <script src="app.js"></script>
+        
+         <div class="colortransition1"></div>
          <div class="maincontainer">
-            <div class="marginleft"></div>
             <div class="teamcontainer">
                 <h1>Software and electronics</h1><br><br>
                 <div class="peoplecontainer">
@@ -73,9 +66,8 @@
                 <br><br><h1>Investigation and health</h1><br><br>
 
                 <div class="peoplecontainer">
-
-                    <div class="hspace" style="width:31.15%"></div>
-                    <div class="personcontainer" onclick=openUser("https://www.linkedin.com/in/debi-ainoo-p%C3%A9rez-97ba15264/")>
+                    <div class="hspace" style="width:41%"></div>
+                    <div class="personcontainer" onclick=openUser("https://www.linkedin.com/in/juan-manuel-l%C3%B3pez-cifuentes/")>
                         <div class="hspace" style="width:12%"></div>
                         <div class="imageanddesc">
                             <div class="persondesc">
@@ -85,20 +77,7 @@
                             <p style="font-size:20px; cursor:pointer" onclick=openUser("https://www.linkedin.com/in/debi-ainoo-p%C3%A9rez-97ba15264/")>Debinamaca Ainoo</p>
                         </div> 
                     </div>
-
-                    <div class="hspace" style="width:1.7%"></div>
-
-                    <div class="personcontainer" onclick=openUser()>
-                        <div class="hspace" style="width:12%"></div>
-                        <div class="imageanddesc">
-                            <div class="persondesc">
-                                <p>Physics investigator</p>
-                            </div>
-                            <img src=" ../../participants/lluis.jpg">
-                            <p style="font-size:20px; cursor:pointer" onclick=openUser()>Lluis Mompó</p>
-                        </div> 
-                    </div>
-                   
+                    
                 </div>
 
                 <br><br><h1>Economics, Marketing and design</h1><br><br>
@@ -136,10 +115,18 @@
                     </div>
 
                 </div>
-
             </div>
-            <div class="marginright"></div>
          </div>
+         <div class="colortransition2"></div>
+         <div class="hiringcontainer">
+            <div class="hspace" style="width: 37.5%"></div>
+            <div class="hiring">
+                <p style="font-size: 18px;">We are hiring!</p>
+                <a href="../hiring/hiring.html">Check out our vacants</a>
+            </div>
+            <div class="hspace" style="width: 37.5%"></div>
+        </div>
+        <br><br>
       </main>
    </body>
 </html>
