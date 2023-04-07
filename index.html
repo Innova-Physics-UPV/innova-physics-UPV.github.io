@@ -8,22 +8,24 @@
       <script src = index.js></script>
       <nav>
          <ul>
-            <li><a href="index.html" style="text-decoration: none; font-size: 14px;">Home</a></li>
-            <li><a href="sections/team/team.html" style="text-decoration: none; font-size: 14px;">Our team</a></li>
-            <li><a href="sections/documentation/documentation.html" style="text-decoration: none; font-size: 14px;">Documentation</a></li>
+            <li><a href="index.html" style="text-decoration: none; font-size: 14px;">Inicio</a></li>
+            <li><a href="sections/team/team.html" style="text-decoration: none; font-size: 14px;">Nuestro equipo</a></li>
+            <li><a href="sections/documentation/documentation.html" style="text-decoration: none; font-size: 14px;">Documentación</a></li>
             <li><a href="https://www.linkedin.com/company/innovaphyisicsupv/" style="text-decoration: none; font-size: 14px;">LinkedIn</a></li>
-            <li><a href="https://www.upv.es/es" style="text-decoration: none; font-size: 14px;">UPV main page</a></li>
+            <li><a href="https://www.upv.es/es" style="text-decoration: none; font-size: 14px;">Página principal UPV</a></li>
          </ul>
       </nav>
       <header>
          <br><br>
          <div class="titlecontainer"><br>
             <div id="particles-js"></div>
+            <div class="hspace" style="width: 25%; position: relative"></div>
+            <div class="titleimagecontainer">
+               <img src="images/logo white.png"> 
+            </div>
+            <div class="hspace" style=" width: 25%; position: relative"></div>
             
-            <h1>INNOVA PHYSICS UPV</h1>
          </div>
-         
-         <br><br><br><br><br><br><br><br><br><br><br><br>
       </header>
       <main>
          <script src="particles.js"></script>
@@ -33,15 +35,20 @@
             <div class="desccontainer">
                <br><br><br><br>
                <h1>¿Quiénes somos?</h1>
-               <p>Somos un grupo de estudiantes trabajando bajo el programa 'generación espontánea', apoyado y financiado por la Universidad
-                   Politécnica de Valencia. Nuestra misión es aplicar la física fundamental y aplicada en diversos campos de la ingeniería.<br>
-                  <p>Conformado por un grupo multidisciplinario y supervisado por profesores de varios departamentos,estamos investigando la
-                      aceleración lineal de partículas y el diseño y construcción de un sincrotrón, para producir radiofármacos aplicados a la tomografía por emisión de positrones. Nuestro equipo se divide en subgrupos de estructuras mecánicas, software, investigación, electrónica, recursos humanos y marketing/publicidad.<br>
+               <p>Innova physics UPV es un grupo de estudiantes interesados en el área de la física, ingeniería y tecnología. Nuestra misión es diseñar y construir 
+                  un acelerador de partículas de una escala reducida con el objetivo de acercar dicha tecnología a lugares donde no puedan ser instalados, 
+                  bien sea por falta de recursos económicos os bien por limitaciones de espacio. <br>
+                  <p>Trabajamos bajo el programa 'generación espontánea', apoyado y financiado por la Universidad
+                     Politécnica de Valencia, y estamos formados por un grupo multidisciplinar supervisado por profesores de varios departamentos. Nuestro equipo se divide en 4 subgrupos, "Structures & Mechanics", "Software & Electrónics", "Investigation & Health" y "economics, marketing & design".<br>
                   <p>Creemos en la excelencia y dedicación, empujando los límites hacia una tecnología accesible pero de vanguardia para las
                       personas de todo el mundo.</p>
             </div>
-            <div class="imgcontainer">
-               <img src="images/mainphoto.jpg">
+            <div style="height:100%; width: 50%; display:block">
+               <div class="vspace" style="height:20%"></div>
+               <div class="imgcontainer">
+                  <img src="images/mainphoto.jpg">
+               </div>
+               <div class="vspace" style="height:20%"></div>
             </div> 
          </div>
          <div class="newscontainer">
@@ -50,21 +57,17 @@
             <div class="hspace" style="width: 40px"></div>
                <div class="slidecontainer">
                   <div class="slide">
-                     <img src="images/ansys.webp" alt="Imagen 1">
+                     <img src="images/ansys.webp">
                   </div>   
                   <div class="slide">
-                     <img src="images/PET-image.jpg" alt="Imagen 2">
-                  </div>
-                  <div class="slide">
-                     <img src="images/demo1.jpg" alt="Imagen 3">
+                     <img src="images/genesp.png">
                   </div>
                   <button class="btn btn-next" id="btnnext" onClick=nextsl()>></button>
                   <button class="btn btn-prev" id="btnprev" onClick=prevsl()><</button>
                </div>
                <div class="newstext">
-                  <p>Buscamos nuevos integrantes! Puedes acceder a la lista de oportunidades con sus respectivos requisitos y descripciones 
-                      el siguiente enlace.</p>
-                  <a href="sections/hiring/hiring.html">Ver oportunidades</a>
+                  <p id="slidetext"></p>
+                  <a id="slidelink"></a>
                </div>
                <div class="hspace" style="width: 5%;"></div>
             </div>

@@ -55,19 +55,17 @@ nav {
     background-color: rgba(0,0,0, 0); 
     text-align: center;
     width: 100%;
-    height: 100px;
+    height: 250px;
     position: relative;
   }
     
   .titlecontainer h1 {
-    padding-left: 27%;
-    padding-right: 8%;
     padding-top: 80px;
     color: rgb(255, 255, 255);
     margin: auto;
-    font-size: 5vw;
-    font-family: Geneva;
-    position: absolute;
+    font-size: 60px;
+    font-family: Arial;
+    position: relative;
   }
   
   .maincontainer {
@@ -78,14 +76,6 @@ nav {
     z-index: -2;
     display: flex;
   }
-  
-  .marginleft, .marginright {
-    background-color: rgb(0,0,0,0); 
-    width: 3%;
-    height: 500px;
-    z-index: 1;
-  }
-  
   
   #particles-js{
     width: 100%;
@@ -186,7 +176,7 @@ nav {
   .hiring {
     height:100%;
     width:25%;
-    background: linear-gradient(#2f016c, #9198e5);
+    background: linear-gradient(#012c6c, #9198e5);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
   }

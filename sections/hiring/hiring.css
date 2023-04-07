@@ -30,7 +30,7 @@ nav a {
 }
     
 body {
-    background: white;
+    background: rgb(0, 0, 0);
     align-items: center;
 }
     
@@ -55,24 +55,45 @@ body a {
     background-color: rgba(0,0,0, 0); 
     text-align: center;
     width: 100%;
-    height: 110px;
-    display: block;
+    height: 250px;
+    position: relative;
+}
+
+#particles-js{
+    width: 100%;
+    height: 250px;
+    background: rgb(0, 0, 0);
+    position: absolute;
 }
       
 .titlecontainer h1 {
-    padding-top: 50px;
-    color: rgb(0, 0, 0);
-    margin:0 auto;
-    font-size: 80px;
-    font-family: Geneva;
+    padding-top: 80px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    font-size: 60px;
+    font-family: Arial;
+    position: relative;
+  }
+
+.colortransition1{
+    background:linear-gradient(to bottom, rgb(0,0,0), rgb(4, 0, 26));
+    height:200px;
+    width:100%;
 }
-    
+
+.colortransition2{
+    background:linear-gradient(to bottom, rgb(4, 0, 26), rgb(0,0,0));
+    height:200px;
+    width:100%;
+  }
+
 .maincontainer {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 0px; 
     width: 100%;
-    height: 5500px;
+    height: 5200px;
     display: flex;
+    text-align: center;
 }
     
 .marginleft, .marginright {
@@ -85,7 +106,7 @@ body a {
 .teamcontainer {
     background-color: rgb(2, 0, 24);
     border-radius: 0px; 
-    width: 94%;
+    width: 100%;
     height: 100%;
     display: block;
     text-align: center;
@@ -135,14 +156,11 @@ body a {
 }
 
 .vacanttext{
-    width:96%;
+    width:100%;
     padding-top: 0px;
-    
     background-color: rgb(15, 15, 48);
     display:block;
-    background-blend-mode: multiply;
-    display:block;
-    
+    background-blend-mode: multiply; 
 }
 
 .vacanttext img{
