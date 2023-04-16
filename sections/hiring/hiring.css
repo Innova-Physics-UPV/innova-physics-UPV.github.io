@@ -9,6 +9,11 @@ nav {
     position: fixed;
     z-index: 50;
 }
+
+nav:hover {
+    transition: 0.15s;
+    background-color: rgb(21, 17, 24);
+  }  
     
 nav ul {
     list-style: none;
