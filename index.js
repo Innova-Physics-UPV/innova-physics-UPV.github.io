@@ -46,7 +46,7 @@ function nextsl() {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
 
-    var object = `sl${curSlide}`
+    var object = `sl${curSlide}`;
     document.getElementById("slidetext").innerHTML=slidetexts[object];
     document.getElementById("slidelink").innerHTML=slidelinktexts[object];
     document.getElementById("slidelink").href=slidelinks[object];
@@ -65,5 +65,10 @@ function prevsl() {
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
+
+  var object = `sl${curSlide}`;
+  document.getElementById("slidetext").innerHTML=slidetexts[object];
+  document.getElementById("slidelink").innerHTML=slidelinktexts[object];
+  document.getElementById("slidelink").href=slidelinks[object];
 };
 
