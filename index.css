@@ -244,11 +244,27 @@ body a {
   margin: 0 auto;
 }
 
-.theproject img {
-  padding-top: 60px;
-  height: 500px;
+.videoanddesc{
+  background-color: rgb(37, 32, 37);
+  height: 80%;
+  width:100%;
+  display: flex;
+  text-align: none;
+  border-radius:10px;
+}
+
+.videoanddesc video {
   width:75%;
-  height: 60%;
+  height: 100%;
+}
+
+.videodesc{
+  background-color: rgb(24, 21, 24);
+  height: 100%;
+  width:25%;
+  display: block;
+  text-align: center;
+  border-radius:0px 10px 10px 0px;
 }
 
 .abouttheproject{
