@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" href="./images/ISOTIPO_COLOR_SQUARE.png">
+      <title>Innova Physics UPV</title>
+      <link rel="stylesheet" type="text/css" href="index.css">
+   </head>
+   <body>
+      <script src = index.js></script>
+      <nav>
+         <ul>
+            <li><a href="index.html" style="text-decoration: none;">Inicio</a></li>
+            <li><a href="sections/team/team.html" style="text-decoration: none;">Nuestro equipo</a></li>
+            <!--<li><a href="sections/documentation/documentation.html" style="text-decoration: none;">Documentación</a></li>-->
+            <li><a href="sections/hiring/hiring.html" style="text-decoration: none;">Vacantes</a></li>
+            <li><a href="https://www.upv.es/es" style="text-decoration: none;">Página principal UPV</a></li>
+         </ul>
+      </nav>
+      <header>
+         <br><br><br>
+         <div class="titlecontainer"><br>
+            <div id="particles-js"></div>
+            <div class="hspace" style="width: 25%; position: relative"></div>
+            <div class="titleimagecontainer">
+               <img src="images/LOGOTIPO_WHITE.png"> 
+            </div>
+            <div class="hspace" style=" width: 25%; position: relative"></div>
+            
+         </div>
+      </header>
+      <main>
+         <script src="particles.js"></script>
+         <script src="app.js"></script>
+
+         <div class="maincontainer">
+            <div class="desccontainer">
+               <br><br><br><br>
+               <h1>¿Quiénes somos?</h1>
+               <br>
+               <p>Innova physics UPV es un grupo multidisciplinar de estudiantes interesados en las áreas de la física, ingeniería y tecnología. Nuestra misión es diseñar y construir 
+                  una fuente de neutrones para aplicarla a la terapia y diagnóstico del cáncer de una manera revolucionaria y efectiva. <br>
+                  <p>Trabajamos bajo el programa 'Generación Espontánea', apoyado y financiado por la Universidad
+                     Politécnica de Valencia. Nuestro equipo se divide en 4 subgrupos, "Structures & Mechanics", "Software & Electrónics", "Physics & Health" y "Economics, Marketing & Design".<br>
+                  <p>Creemos en la excelencia y en la dedicación.</p>
+            </div>
+            <div style="height:100%; width: 50%; display:block">
+               <div class="vspace" style="height:20%"></div>
+               <div class="imgcontainer">
+                  <img src="images/mainphoto.jpg">
+               </div>
+               <div class="vspace" style="height:20%"></div>
+            </div> 
+         </div>
+         <div class="newscontainer">
+            <h1 style="font-family: Arial; font-size: 27px;">Noticias</h1>
+            <div class="slidesandtext">
+            <div class="hspace" style="width: 40px"></div>
+               <div class="slidecontainer">
+                  <div class="slide">
+                     <img src="images/CARTEL_PROMOCIONAL.png">
+                  </div>   
+                  <div class="slide">
+                     <img src="images/genesp.png">
+                  </div>
+                  <button class="btn btn-next" id="btnnext" onClick=nextsl()>></button>
+                  <button class="btn btn-prev" id="btnprev" onClick=prevsl()><</button>
+               </div>
+               <div class="newstext">
+                  <p id="slidetext"></p>
+                  <a id="slidelink"></a>
+               </div>
+               <div class="hspace" style="width: 5%;"></div>
+            </div>
+         </div>
+      <div class="maincontainer" style="background-color: rgb(4, 0, 26);"> 
+         <div class="hspace" style="width:3%"></div>
+         <div class="projectcontainer">
+            <div class="theproject">
+               <div class="titlecontainer" style=" height: 20%; width:100%">
+                  <h1 style="font-size: 40px;"> Nuestro prototipo</h1>
+               </div>
+               <div class="videoanddesc">
+                  <video src="images/Demo_Planos.mp4" autoplay="true" muted="true" loop="true"></video>
+                  <div class="videodesc">
+                     <br><br><br><br><br><br>
+                     <p style="font-size: 15px;">Actualmente estamos diseñando y construyendo una maqueta de acelerador a pequeña escala con el objetivo de aprender a
+                        manejar los dispositivos electrónicos y a emplear los programas de CAD y simulación, además de así poder tener una muestra para
+                         mostrar en futuros eventos.
+                     </p>
+                  </div>
+               </div>
+               
+         
+            </div>
+            <div class="abouttheproject">
+               <br><br><br><br><br><br><br><br>
+               <h1 style="font-size: 27px;">Más sobre nosotros</h1> <br><br><br>
+               <a href="sections/documentation/documentation.html"> Documentación</a>
+               <br><br><br><br>
+               <a href="https://github.com/Innova-Physics-UPV">Software open source</a>
+         
+            </div>
+         </div>
+         <div class="hspace" style="width:3%"></div>
+      </div>   
+      <div class="maincontainer" style="height: 160px;">
+         <div class="bottomcontainer">
+            <br><h1>Contáctanos:</h1><br>
+            <a href="http://instagram.com/innovaphysicsupv">@innovaphysicsupv</a><br><br>
+            <a href="http://gmail.com">innovaphysicsupv@gmail.com</a>
+         </div>
+      </div>
+      </main>
+   </body>
+</html>

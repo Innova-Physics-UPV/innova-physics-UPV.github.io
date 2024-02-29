@@ -1,115 +1,521 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <link rel="icon" href="./images/ISOTIPO_COLOR_SQUARE.png">
-      <title>Innova Physics UPV</title>
-      <link rel="stylesheet" type="text/css" href="index.css">
-   </head>
-   <body>
-      <script src = index.js></script>
-      <nav>
-         <ul>
-            <li><a href="index.html" style="text-decoration: none;">Inicio</a></li>
-            <li><a href="sections/team/team.html" style="text-decoration: none;">Nuestro equipo</a></li>
-            <!--<li><a href="sections/documentation/documentation.html" style="text-decoration: none;">Documentación</a></li>-->
-            <li><a href="sections/hiring/hiring.html" style="text-decoration: none;">Vacantes</a></li>
-            <li><a href="https://www.upv.es/es" style="text-decoration: none;">Página principal UPV</a></li>
-         </ul>
-      </nav>
-      <header>
-         <br><br><br>
-         <div class="titlecontainer"><br>
-            <div id="particles-js"></div>
-            <div class="hspace" style="width: 25%; position: relative"></div>
-            <div class="titleimagecontainer">
-               <img src="images/LOGOTIPO_WHITE.png"> 
-            </div>
-            <div class="hspace" style=" width: 25%; position: relative"></div>
-            
-         </div>
-      </header>
-      <main>
-         <script src="particles.js"></script>
-         <script src="app.js"></script>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <link rel="icon" href="assets/imgs/ISOTIPO_COLOR_SQUARE.png">
+    <title>Innova Physics UPV</title>
+   
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
-         <div class="maincontainer">
-            <div class="desccontainer">
-               <br><br><br><br>
-               <h1>¿Quiénes somos?</h1>
-               <br>
-               <p>Innova physics UPV es un grupo multidisciplinar de estudiantes interesados en las áreas de la física, ingeniería y tecnología. Nuestra misión es diseñar y construir 
-                  una fuente de neutrones para aplicarla a la terapia y diagnóstico del cáncer de una manera revolucionaria y efectiva. <br>
-                  <p>Trabajamos bajo el programa 'Generación Espontánea', apoyado y financiado por la Universidad
-                     Politécnica de Valencia. Nuestro equipo se divide en 4 subgrupos, "Structures & Mechanics", "Software & Electrónics", "Physics & Health" y "Economics, Marketing & Design".<br>
-                  <p>Creemos en la excelencia y en la dedicación.</p>
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+	<link rel="stylesheet" href="assets/css/foodhut.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">¿Que es Innova?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">¿En qué trabajamos?</a>
+                </li>
+            </ul>
+            <a class="navbar-brand m-auto" href="#">
+                <img src="assets/imgs/ISOTIPO_WHITE.png" class="brand-img" alt="">
+                <span class="brand-txt"></span>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Nuestro equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partners">Partners<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <header id="home" class="header">
+        <div class="overlay text-white text-center">
+            <img src="assets/imgs/LOGOTIPO_WHITE.png" style="width:40%" class="brand-img" alt="">
+        </div>
+    </header>
+
+    <!--  About Section  -->
+    <div id="about" class="container-fluid wow fadeIn border" id="about"data-wow-duration="1.5s">
+        <div class="row">
+            <div class="col-lg-6 has-img-bg"></div>
+            <div class="col-lg-6">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 py-5 my-5">
+                        <h2 class="mb-4">Sobre nosotros</h2>
+                        <p>Innova physics UPV es un grupo multidisciplinar de estudiantes interesados en las áreas de la física, ingeniería y tecnología. Nuestra misión es diseñar y construir una fuente de neutrones para aplicarla a la terapia y diagnóstico del cáncer de una manera revolucionaria y efectiva.
+                            Trabajamos bajo el programa <b>Generación Espontánea</b>, el cual está apoyado y financiado por la Universidad Politécnica de Valencia.
+                        
+                            Creemos en la excelencia y en la dedicación, gracias a las cuales día tras día avanzamos para construir un futuro mejor. </p>
+                            <p style="font-size: 25px;"><b>Innova Physics: Accelerating Future</b></p>
+                    </div>
+                </div>
             </div>
-            <div style="height:100%; width: 50%; display:block">
-               <div class="vspace" style="height:20%"></div>
-               <div class="imgcontainer">
-                  <img src="images/mainphoto.jpg">
-               </div>
-               <div class="vspace" style="height:20%"></div>
-            </div> 
-         </div>
-         <div class="newscontainer">
-            <h1 style="font-family: Arial; font-size: 27px;">Noticias</h1>
-            <div class="slidesandtext">
-            <div class="hspace" style="width: 40px"></div>
-               <div class="slidecontainer">
-                  <div class="slide">
-                     <img src="images/CARTEL_PROMOCIONAL.png">
-                  </div>   
-                  <div class="slide">
-                     <img src="images/genesp.png">
-                  </div>
-                  <button class="btn btn-next" id="btnnext" onClick=nextsl()>></button>
-                  <button class="btn btn-prev" id="btnprev" onClick=prevsl()><</button>
-               </div>
-               <div class="newstext">
-                  <p id="slidetext"></p>
-                  <a id="slidelink"></a>
-               </div>
-               <div class="hspace" style="width: 5%;"></div>
+        </div>
+    </div>
+
+    <div style="height: 50px;">
+    </div>
+
+    <!--  About Section  -->
+    <div id="work" class="container-fluid wow fadeIn border" id="about"data-wow-duration="1.5s">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 py-5 my-5">
+                        <h2 class="mb-4">Nuestro prototipo</h2>
+                        <p>Actualmente estamos diseñando y construyendo una maqueta de acelerador a pequeña escala con el objetivo de aprender a manejar los dispositivos electrónicos y a emplear los programas de CAD y simulación, además de así poder tener una muestra para mostrar en futuros eventos.</p>
+                    </div>
+                </div>
             </div>
-         </div>
-      <div class="maincontainer" style="background-color: rgb(4, 0, 26);"> 
-         <div class="hspace" style="width:3%"></div>
-         <div class="projectcontainer">
-            <div class="theproject">
-               <div class="titlecontainer" style=" height: 20%; width:100%">
-                  <h1 style="font-size: 40px;"> Nuestro prototipo</h1>
-               </div>
-               <div class="videoanddesc">
-                  <video src="images/Demo_Planos.mp4" autoplay="true" muted="true" loop="true"></video>
-                  <div class="videodesc">
-                     <br><br><br><br><br><br>
-                     <p style="font-size: 15px;">Actualmente estamos diseñando y construyendo una maqueta de acelerador a pequeña escala con el objetivo de aprender a
-                        manejar los dispositivos electrónicos y a emplear los programas de CAD y simulación, además de así poder tener una muestra para
-                         mostrar en futuros eventos.
-                     </p>
-                  </div>
-               </div>
-               
-         
+            <div class="col-lg-6 has-vid-bg">
+                <video autoplay muted loop id="bg-video">
+                    <source src="assets/imgs/Demo_Planos.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
             </div>
-            <div class="abouttheproject">
-               <br><br><br><br><br><br><br><br>
-               <h1 style="font-size: 27px;">Más sobre nosotros</h1> <br><br><br>
-               <a href="sections/documentation/documentation.html"> Documentación</a>
-               <br><br><br><br>
-               <a href="https://github.com/Innova-Physics-UPV">Software open source</a>
-         
+            
+            
+        </div>
+    </div>
+
+
+    <!-- BLOG Section  -->
+    <div id="team" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn" >
+        <h2 class="section-title py-5">NUESTROS MIEMBROS</h2>
+        <div class="row justify-content-center" >
+            <div class="col-sm-7 col-md-4 mb-5" style="width:100px;">
+                <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" onmouseover="toggleImages1(true)" onmouseout="toggleImages1(false)">
+                        <img src="assets/imgs/c1.png" data-toggle="pill" href="#software" style="width:80%; cursor:pointer" class="brand-img color-img1" alt="">
+                        <img src="assets/imgs/w1.png" data-toggle="pill" style="width:80%; cursor:pointer" class="brand-img white-img1" alt="">
+                    </li>
+                    <li class="nav-item" onmouseover="toggleImages2(true)" onmouseout="toggleImages2(false)">
+                        <img src="assets/imgs/c2.png" data-toggle="pill" href="#physics" style="width:80%; cursor:pointer" class="brand-img color-img2" alt="">
+                        <img src="assets/imgs/w2.png" data-toggle="pill" style="width:80%; cursor:pointer" class="brand-img white-img2" alt="">
+                    </li>
+                    <li class="nav-item" onmouseover="toggleImages3(true)" onmouseout="toggleImages3(false)">
+                        <img src="assets/imgs/c3.png" data-toggle="pill" href="#structures" style="width:80%; cursor:pointer" class="brand-img color-img3" alt="">
+                        <img src="assets/imgs/w3.png" data-toggle="pill" style="width:80%; cursor:pointer" class="brand-img white-img3" alt="">
+                    </li>
+                    <li class="nav-item" onmouseover="toggleImages4(true)" onmouseout="toggleImages4(false)">
+                        <img src="assets/imgs/c4.png" data-toggle="pill" href="#economics" style="width:80%; cursor:pointer" class="brand-img color-img4" alt="">
+                        <img src="assets/imgs/w4.png" data-toggle="pill"style="width:80%; cursor:pointer" class="brand-img white-img4" alt="">
+                    </li>
+                    <li class="nav-item" onmouseover="toggleImages5(true)" onmouseout="toggleImages5(false)">
+                        <img src="assets/imgs/c5.png" data-toggle="pill" href="#design" style="width:80%; cursor:pointer" class="brand-img color-img5" alt="">
+                        <img src="assets/imgs/w5.png" data-toggle="pill" style="width:80%; cursor:pointer" class="brand-img white-img5" alt="">
+                    </li>
+                </ul>
             </div>
-         </div>
-         <div class="hspace" style="width:3%"></div>
-      </div>   
-      <div class="maincontainer" style="height: 160px;">
-         <div class="bottomcontainer">
-            <br><h1>Contáctanos:</h1><br>
-            <a href="http://instagram.com/innovaphysicsupv">@innovaphysicsupv</a><br><br>
-            <a href="http://gmail.com">innovaphysicsupv@gmail.com</a>
-         </div>
-      </div>
-      </main>
-   </body>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="software" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Antonio Abellán</h4>
+                                <p class="text-white">Team manager & electric engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Mari Carmen Rea</h4>
+                                <p class="text-white">Software engineer & UI designer </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Nuria Vanyó</h4>
+                                <p class="text-white">Software engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Bernardo Castera</h4>
+                                <p class="text-white">Web designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Mario Climent</h4>
+                                <p class="text-white">IOT engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Ana Cruz</h4>
+                                <p class="text-white">Electric engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Javier Pérez</h4>
+                                <p class="text-white">Electric engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="physics" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Debinamaca Ainoo</h4>
+                                <p class="text-white">Accelerators and Magnets team manager </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Víctor Martín</h4>
+                                <p class="text-white">Nuclear reactions team manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Aisha del Tío</h4>
+                                <p class="text-white">Medical imaging and reconstruction team manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Andrés Sánchez-Toril</h4>
+                                <p class="text-white">Multyphysics simulator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Roque Mula</h4>
+                                <p class="text-white">Multyphysics simulator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Julia Rico</h4>
+                                <p class="text-white">Medical imaging engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Alba Qiu</h4>
+                                <p class="text-white">Image reconstruction engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Jaime Gimeno</h4>
+                                <p class="text-white">Magnets physicist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Mario Rivera</h4>
+                                <p class="text-white">Magnets physicist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Laura Gil</h4>
+                                <p class="text-white">Nuclear physicist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Mateo Gajic</h4>
+                                <p class="text-white">Nuclear physicist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Estanislao Estellés</h4>
+                                <p class="text-white">Accelerators physicist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="structures" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Álvaro Marcos</h4>
+                                <p class="text-white">Team manager & design engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Juan Manuel López</h4>
+                                <p class="text-white">Vacuum Physicist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Ismael Gómez</h4>
+                                <p class="text-white">Vacuum Physicist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Lucas Tarragó</h4>
+                                <p class="text-white">Vacuum Physicist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="economics" role="tabpanel" aria-labelledby="pills-profile-tab" >
+                <div class="row" >
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Marco Nieto</h4>
+                                <p class="text-white">Group manager & accountant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent my-3 my-md-0">
+                            <img src="assets/imgs/test2-modified.png" alt="img" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h4 class="pt20 pb20">Víctor Moll</h4>
+                                <p class="text-white">RRHH manager and interviewer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  partners Section  -->
+    <div id="partners" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">
+        <h2 class="section-title">NUESTROS PATROCINADORES</h2>
+    </div>
+    <div id="partners" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">
+        <h2 class="section-title" style="font-size:4vw;">Nivel especial</h2>
+    </div>
+    
+    <div class="gallary row">
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-1.png" alt="img" class="gallary-img">
+            <a href="https://www.upv.es/entidades/ETSIT/indexc.html" class="gallary-overlay"></a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-2.png" alt="img" class="gallary-img">
+            <a href="https://www.upv.es/" class="gallary-overlay"></a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-3.png" alt="img" class="gallary-img">
+            <a href="https://generacionespontanea.upv.es/" class="gallary-overlay"></a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/iumpa.png" alt="img" class="gallary-img">
+            <a href="http://www.iumpa.upv.es" class="gallary-overlay"></a>
+        </div>
+    </div>
+
+    <div id="partners" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">
+        <h2 class="section-title" style="font-size:4vw;">Nivel medio</h2>
+    </div>
+
+    <div class="gallary row">
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-3.png" alt="img" class="gallary-img">
+            <a href="https://generacionespontanea.upv.es/" class="gallary-overlay"></a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-3.png" alt="img" class="gallary-img">
+            <a href="https://generacionespontanea.upv.es/" class="gallary-overlay"></a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-3.png" alt="img" class="gallary-img">
+            <a href="https://generacionespontanea.upv.es/" class="gallary-overlay"></a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-3.png" alt="img" class="gallary-img">
+            <a href="https://generacionespontanea.upv.es/" class="gallary-overlay"></a>
+        </div>
+    </div>
+
+    <div id="partners" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">
+        <h2 class="section-title" style="font-size:4vw;">Nivel básico</h2>
+    </div>
+
+    <div class="gallary row">
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-3.png" alt="img" class="gallary-img">
+            <a href="https://generacionespontanea.upv.es/" class="gallary-overlay"></a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-3.png" alt="img" class="gallary-img">
+            <a href="https://generacionespontanea.upv.es/" class="gallary-overlay"></a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-3.png" alt="img" class="gallary-img">
+            <a href="https://generacionespontanea.upv.es/" class="gallary-overlay"></a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/gallary-3.png" alt="img" class="gallary-img">
+            <a href="https://generacionespontanea.upv.es/" class="gallary-overlay"></a>
+        </div>
+    </div>
+
+    <div id="partners" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">
+        <h2 class="section-title" style="font-size:4vw;"></h2>
+    </div>
+
+    <!-- CONTACT Section  -->
+    <div id="contact" class="container-fluid bg-dark text-light border-top wow fadeIn">
+        <div class="row">
+            <div class="col-md-6 px-0">
+                <div id="mapDiv" style="width: 100%; height: 100%; min-height: 400px"></div>
+            </div>
+            <div class="col-md-6 px-5 has-height-lg middle-items">
+                <h3>CONTÁCTANOS</h3>
+                <p>Ponte en contacto con nosotros a través de nuestras redes sociales, o visítanos en nuestro despacho de la Universitat Politécnica de Valencia.</p>
+                <div class="text-muted">
+                    <p><span class="ti-location-pin pr-3"></span> Camí de Vera S/N, Valencia. Edificio 8H, Aula 0.042.</p>
+                    <p><span class="ti-email pr-3"></span>innovaphysicsupv@gmail.com</p>
+                    <p><span class="ti-support pr-3"></span> Revisa nuestras publicaciones más recientes en <a href="http://instagram.com/innovaphysicsupv">@innovaphysicsupv</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page footer  -->
+    <!-- page footer  
+    <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>EMAIL US</h3>
+                <P class="text-muted">info@website.com</P>
+            </div>
+            <div class="col-sm-4">
+                <h3>CALL US</h3>
+                <P class="text-muted">(123) 456-7890</P>
+            </div>
+            <div class="col-sm-4">
+                <h3>FIND US</h3>
+                <P class="text-muted">12345 Fake ST NoWhere AB Country</P>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div class="bg-dark text-light text-center border-top wow fadeIn">
+        <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> <a href="http://devcrud.com"></a></p>
+    </div>
+    <!-- end of page footer -->
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- wow.js -->
+    <script src="assets/vendors/wow/wow.js"></script>
+    
+    <!-- google maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- FoodHut js -->
+    <script src="assets/js/foodhut.js"></script>
+
+</body>
 </html>
