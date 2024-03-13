@@ -2792,6 +2792,7 @@
     border-color: #e0002e;
   }
   
+  
   .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
   .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(255, 66, 105, 0.5);
@@ -11196,12 +11197,13 @@
     max-height: 900px;
     background: url(../imgs/gradiente.png) no-repeat center center fixed;
     background-size: cover;
-    min-height: 750px;
+    min-height: 900px;
   }
   
   .header .overlay {
     height: 100%;
-    background: rgba(33, 37, 41, 0.7);
+    background: linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0));
+    /* Use linear-gradient with two rgba colors: starting color with alpha 0.7 and ending color with alpha 0 */
     display: -webkit-flex;
     display: -ms-flex;
     display: -webkit-box;
@@ -11209,18 +11211,19 @@
     display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
   
   .header-title {
     font-size: 2.4rem;
@@ -14231,28 +14234,7 @@ pre {
   min-height: 750px;
 }
 
-.header .overlay {
-  height: 100%;
-  background: rgba(33, 37, 41, 0.7);
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+
 
 .header-title {
   font-size: 2.4rem;
