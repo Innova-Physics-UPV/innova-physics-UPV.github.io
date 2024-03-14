@@ -7223,7 +7223,7 @@
   }
   
   .border {
-    border: 1px solid #495057 !important;
+    border: 1px solid transparent !important;
   }
   
   .border-top {
