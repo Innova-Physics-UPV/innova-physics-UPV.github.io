@@ -11262,7 +11262,7 @@
   }
   
   .has-img-bg {
-    background: url(../imgs/lateral.png) no-repeat center center;
+    background: url(../imgs/team_fotos/fotoequipo.png) no-repeat center center;
     background-size: cover;
   }
   
@@ -14273,7 +14273,7 @@ pre {
 }
 
 .has-img-bg {
-  background: url(../imgs/lateral.png) no-repeat center center;
+  background: url(../imgs/team_fotos/fotoequipo.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -14473,7 +14473,7 @@ pre {
   left: 0;
   width: 100%; 
   height: 100%; 
-  background-image: url('../imgs/lateral2.png'); 
+  background-image: url('../imgs/team_fotos/fotoequipo.png'); 
   background-size: cover; 
   background-position: center;
   z-index: -1; 
