@@ -264,7 +264,7 @@
   [type="button"],
   [type="reset"],
   [type="submit"] {
-    -webkit-appearance: button;
+    appearance: button;
   }
   
   button:not(:disabled),
@@ -292,7 +292,7 @@
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
-    -webkit-appearance: listbox;
+    appearance: listbox;
   }
   
   textarea {
@@ -330,7 +330,7 @@
   
   [type="search"] {
     outline-offset: -2px;
-    -webkit-appearance: none;
+    appearance: none;
   }
   
   [type="search"]::-webkit-search-decoration {
@@ -14526,4 +14526,77 @@ pre {
 
 .block4 > .block-content {
   margin-right: 80px; 
+}
+
+.row{
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  
+  html{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  body{
+    width: 100%;
+  }
+
+  .overlap-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    max-width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-color: transparent;
+    flex-direction: column;
+    align-content: center;
+  } 
+  .block-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .block1 {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+  .block.block2{
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    justify-self: center;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 10px;
+    box-sizing: content-box;
+  }
+  .block.block3{
+    display: flex;
+  }
+  .block.block4{
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    justify-self: center;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 10px;
+    box-sizing: content-box;
+    
+  }
+  .row{
+    flex: content;
+  }
+  .section-title{
+    font-size: 2rem;
+  }
+
+  .col-md-6.px-5.has-height-lg.middle-items{
+    margin-top: 20px;
+  }
 }
